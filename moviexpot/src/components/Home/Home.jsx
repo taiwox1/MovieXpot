@@ -14,7 +14,7 @@ function Home() {
     const fetchMovie = async () => {
       const response = await movieApi.get(`?apikey=${APIkey}&s=${movieText}&type=movie`)
         .catch((err) => {
-          console.log("Err", err);
+          console.log(" here is an Err", err);
         });
       dispatch(addmovies(response.data));
       console.log(response.data)
