@@ -12,7 +12,7 @@ import {
 const defaultList = [
     "Harry",
     "Mad",
-    "friends",
+    "friend",
     "State",
     "Holiday",
     "Boss",
@@ -21,23 +21,26 @@ const defaultList = [
   ]
 const value = defaultList[Math.floor(Math.random() * defaultList.length)];
    
-  
+  console.log(value)
    
    
 function Home() {
   const dispatch = useDispatch();
   const [defaultValue, SetDefaultValue] = useState("");
-   console.log(defaultValue)
+  console.log(defaultValue)
+  
   useEffect(() => {
-    SetDefaultValue(value)
+    SetDefaultValue(value) 
     dispatch(fetchAsynShows(defaultValue));
     dispatch(fetchAsynMovies(defaultValue));
    
  
   }, [dispatch, defaultValue]);
   return (
-    <div>
-    
+    <div  onLoad= {() => SetDefaultValue(value)} >
+      {
+        
+    }
       <h1>
         <MovieListing />
       </h1>

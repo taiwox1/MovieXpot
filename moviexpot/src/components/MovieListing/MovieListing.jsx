@@ -16,22 +16,26 @@ const MovieListing = () => {
   const movie = useSelector(getAllMovies);
   const series = useSelector(getAllShows);
   let renderMovies, renderSeries = "";
+
+
   if (movie.status === "loading") {
     return (
       <div className="movie-status">
         <h2>Loading... </h2>
       </div>
     );
+
   }
   
- if (movie.data.Error) {
+   if (movie.data.Error) {
     return (
       <div className="movie-status">
-        <h2>Something went wrong <br/>  </h2>
+        <h2>Something went wrong ,
+          <br /> Check your Network<br />  </h2>
       </div>
     );
-  }
-  
+  } 
+   
   if (movie.status === "failed") {
     return (
       <div className="movie-status">
