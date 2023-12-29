@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/css/main.53947f29.css",
-    "main.js": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/js/main.db1e7f31.js",
-    "static/media/slick.svg": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/https//taiwox1.github.io/MovieXpot/moviexpot/index.html",
-    "main.53947f29.css.map": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/css/main.53947f29.css.map",
-    "main.db1e7f31.js.map": "/https//taiwox1.github.io/MovieXpot/moviexpot/static/js/main.db1e7f31.js.map"
+    "main.css": "/MovieXpot/moviexpot/static/css/main.53f95775.css",
+    "main.js": "/MovieXpot/moviexpot/static/js/main.db1e7f31.js",
+    "static/media/slick.svg": "/MovieXpot/moviexpot/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MovieXpot/moviexpot/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MovieXpot/moviexpot/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MovieXpot/moviexpot/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/MovieXpot/moviexpot/index.html",
+    "main.53f95775.css.map": "/MovieXpot/moviexpot/static/css/main.53f95775.css.map",
+    "main.db1e7f31.js.map": "/MovieXpot/moviexpot/static/js/main.db1e7f31.js.map"
   },
   "entrypoints": [
-    "static/css/main.53947f29.css",
+    "static/css/main.53f95775.css",
     "static/js/main.db1e7f31.js"
   ]
 }
