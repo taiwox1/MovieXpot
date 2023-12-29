@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import MovieListing from "../../components/MovieListing/MovieListing";
@@ -19,25 +19,29 @@ const defaultList = [
     "super",
     "superman"
   ]
-const value = defaultList[Math.floor(Math.random() * defaultList.length)];
-   
-  console.log(value)
-   
-   
-function Home() {
-  const dispatch = useDispatch();
-  const [defaultValue, SetDefaultValue] = useState("");
-  console.log(defaultValue)
+
+
+   const value = defaultList[Math.floor(Math.random() * defaultList.length)];
   
+function Home() {
+
+
+  const dispatch = useDispatch();
+ 
+  
+ console.log(value)
   useEffect(() => {
-    SetDefaultValue(value) 
-    dispatch(fetchAsynShows(defaultValue));
-    dispatch(fetchAsynMovies(defaultValue));
+
+   
+    dispatch(fetchAsynShows(value));
+    dispatch(fetchAsynMovies(value));
    
  
-  }, [dispatch, defaultValue]);
+  }, [dispatch]);
+
+  
   return (
-    <div  onLoad= {() => SetDefaultValue(value)} >
+    <div   >
       {
         
     }
