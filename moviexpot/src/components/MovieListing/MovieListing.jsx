@@ -4,6 +4,8 @@ import { getAllMovies, getAllShows } from "../../features/movies/movieSlice";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import "./MovieListing.scss";
 
+import { Settings } from "../../common/setting";
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -11,13 +13,6 @@ import Slider from "react-slick";
 
 const MovieListing = () => {
 
-   const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 6,
-      slidesToScroll: 3
-    };
   const movie = useSelector(getAllMovies);
   const series = useSelector(getAllShows);
   let renderMovies, renderSeries = "";
@@ -28,7 +23,15 @@ const MovieListing = () => {
       </div>
     );
   }
-
+  
+ if (movie.data.Error) {
+    return (
+      <div className="movie-status">
+        <h2>Something went wrong <br/>  </h2>
+      </div>
+    );
+  }
+  
   if (movie.status === "failed") {
     return (
       <div className="movie-status">
@@ -66,7 +69,7 @@ const MovieListing = () => {
       <div className="movie-list">
         <h2>Movies</h2>
         <div className="movie-container">
-          <Slider {...settings}>
+          <Slider {...Settings}>
             {renderMovies}
           </Slider>
           </div>
@@ -74,7 +77,10 @@ const MovieListing = () => {
           <div className="movie-list">
         <h2>Series</h2>
         <div className="movie-container">
-         {renderSeries} 
+          <Slider {...Settings}>
+            {renderSeries}
+          </Slider>
+          
         </div>  
       </div> 
     </div>
