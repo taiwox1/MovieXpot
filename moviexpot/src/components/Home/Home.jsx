@@ -17,7 +17,8 @@ const defaultList = [
     "Holiday",
     "Boss",
     "super",
-    "superman"
+  "superman",
+    "Game"
   ]
 
 

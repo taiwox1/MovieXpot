@@ -31,7 +31,7 @@ const MovieListing = () => {
     return (
       <div className="movie-status">
         <h2>Something went wrong ,
-          <br /> Check your Network<br />  </h2>
+          <br /> Request Not Found<br />  </h2>
       </div>
     );
   } 
@@ -39,7 +39,7 @@ const MovieListing = () => {
   if (movie.status === "failed") {
     return (
       <div className="movie-status">
-        <h2>Error: {movie.error} </h2>
+        <h2>Error: {movie.error} <br/> Check Your Connection </h2>
       </div>
     );
   }
